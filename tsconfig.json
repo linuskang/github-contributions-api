@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/bases/strictest", "@tsconfig/bases/node22"],
+  "compilerOptions": {
+    "noEmit": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["src", "test", "vitest.config.mts"]
+}
